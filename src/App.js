@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import HomePages from "./components/HeroComponent.jsx/Pages/HomePages";
+
 
 function App() {
   return (
-    <div >
-      <h2>Hotel Management System</h2>
-        
-    </div>
+   <Router>
+         <Routes>
+           <Route path="/" element={<HomePages />} />
+           
+         </Routes>
+       </Router>
   );
 }
 

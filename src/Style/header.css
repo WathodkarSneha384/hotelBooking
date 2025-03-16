@@ -1,0 +1,141 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('../asset/Hero_banner_img.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  .logo span {
+    display: block;
+    font-size: 12px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+  }
+  
+  .hero-content p {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  
+  .hero-content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .tour-btn,
+  .learn-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .tour-btn {
+    background-color: #c49b63;
+    color: white;
+  }
+  
+  .learn-btn {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+  }
+  
+  /* Booking Form */
+  .booking-form {
+    width: 90%;
+    max-width: 1000px;
+    background: black;
+    color: white;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 10px;
+    margin-left: 20%;
+  }
+  
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  
+  .form-item label {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  .form-item input,
+  .form-item select {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .availability-btn {
+    background-color: #c49b63;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
