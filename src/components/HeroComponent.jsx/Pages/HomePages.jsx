@@ -3,6 +3,7 @@ import Home from '../../Home'
 import BookingForm from '../BookingForm'
 //import HeroComponent from '../HeroComponent'
 import Footer from '../../Footer'
+import BodyComponent1 from '../../BodyComponent.jsx/BodyComponent1'
 
 
 function HomePages() {
@@ -10,6 +11,7 @@ function HomePages() {
     <div>
     <Home/>
    <BookingForm/>
+   <BodyComponent1/>
    <Footer/>
    </div>
   )

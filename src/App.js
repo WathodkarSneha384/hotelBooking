@@ -10,8 +10,9 @@ function App() {
            <Route path="/" element={<HomePages />} />
            
          </Routes>
-       </Router>
+       </Router>  
   );
+  
 }
 
 export default App;
