@@ -1,5 +1,16 @@
-const BodyComponent = () =>{
-    return <h1>Featured Hotel</h1>
+import HotelList from "./HotelList";
+
+
+const BodyComponent1 = () =>{
+    
+     return(
+
+        <div>
+            <h1>Featured Hotels</h1>
+            <HotelList/>
+        </div>
+     )
+   
 }
 
-export default BodyComponent;
+export default BodyComponent1;
