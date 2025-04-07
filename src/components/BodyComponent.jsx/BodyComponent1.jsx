@@ -6,7 +6,7 @@ const BodyComponent1 = () =>{
      return(
 
         <div>
-            <h1>Featured Hotels</h1>
+            <h1 style={{fontSize:'40px', textAlign:'center'}}>Featured Hotels</h1>
             <HotelList/>
         </div>
      )

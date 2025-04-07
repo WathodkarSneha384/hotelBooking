@@ -1,6 +1,6 @@
 const HotelCard = ({hotel}) =>{
     return (
-        <div className="card" style={{width:'18rem'}}>
+        <div className="card" style={{width:'16rem'}}>
             <img className="card-img-top" src={hotel.image} alt={hotel.name}/>
             <div className="card-body">
                 <h4 className="card-title">{hotel.name} </h4>
