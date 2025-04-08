@@ -13,7 +13,7 @@ function Home() {
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="footer">About</a>
           </li>
           <li>
             <a href="#">Rooms</a>
@@ -25,13 +25,16 @@ function Home() {
             <a href="#">Blog</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="footer">Contact</a>
           </li>
           <li>
             <a href="offers">Offers</a>
           </li>
           <li>
             <a href="review">Reviews</a>
+          </li>
+          <li>
+            <a href="login_register">Login</a>
           </li>
         </ul>
       </nav>
