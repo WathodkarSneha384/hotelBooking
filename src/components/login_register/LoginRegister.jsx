@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
+import "../../Style/login_register.css";
 
 export default function LoginRegister() {
     const [isExistingUser,setIsExistingUser]=useState(true)
