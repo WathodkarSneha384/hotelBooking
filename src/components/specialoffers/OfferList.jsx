@@ -1,7 +1,7 @@
 import offersCard from "../../database/offers/OfferCards";
 import Offer from "./Offer";
 
-const OfferList = () => {
+export const OfferList = () => {
   const SpecialOffersList = offersCard.map((newoffer) => (
     <div key={newoffer.id} className="col">
       <Offer offer={newoffer} />
@@ -9,4 +9,3 @@ const OfferList = () => {
   ));
   return <div className="row"> {SpecialOffersList} </div>;
 };
-export default OfferList;

@@ -6,9 +6,9 @@ const HotelList = () =>{
 
    const hotelCardList = hotels.map(cards=>
    <div key={cards.id} className="col">
-    <Link to={"detail/"+cards.id}>
-    <HotelCard hotel={cards}/>
-    </Link>
+        <Link to={"detail/"+cards.id}>
+            <HotelCard hotel={cards}/>
+        </Link>
     </div>);
 
    return(
