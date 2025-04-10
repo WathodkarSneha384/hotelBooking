@@ -17,7 +17,7 @@ const HotelDetail = ()=>{
                     <h3>{hotelObj.rating}</h3>
                 </div>
                 <div >
-                    <button className='btn btn-outline-success mt-3 m-3'>Back</button>
+                    <button className='btn btn-outline-success mt-3 m-3'><a href="/">Back</a></button>
                 </div>
                 </div>
                 <div className="container border rounded mb-4 mt-4" style={{textAlign:'center'}}>

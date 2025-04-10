@@ -22,7 +22,7 @@ export default function SignUp({existingUser}) {
     <div className="container mt-5 pt-5" >
             <div className='row'>
                 <div className='col-12 col-sm-12 col-md-6 m-auto'>
-                    <div className='card bg-light border-0 shadow' >
+                    <div className='card bg-info border-0 shadow' >
                         <div className='card-body'>
                         <div> 
                             <h2 className='text-center my-3 py-3 w-50 mx-auto'>Register</h2>

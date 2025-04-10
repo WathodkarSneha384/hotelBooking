@@ -15,9 +15,9 @@ function BookingForm() {
       <div className="form-item">
         <label>ROOMS</label>
         <select>
-          <option>Suite</option>
-          <option>Deluxe</option>
-          <option>Standard</option>
+          <option>1 Room</option>
+          <option>2 Room</option>
+          <option>3+ Room</option>
         </select>
       </div>
       <div className="form-item">

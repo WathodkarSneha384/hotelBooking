@@ -64,10 +64,10 @@ const Footer=()=>{
                      Quick Links
                 </h2>
                 <ul>
-                    <li><a href="#" className="hover:underline text-gray-300">Home</a></li>
-                    <li><a href="#" className="hover:underline text-gray-300">Services</a></li>
-                    <li><a href="#" className="hover:underline text-gray-300">Contact</a></li>
-                    <li><a href="#" className="hover:underline text-gray-300">About</a></li>
+                    <li><a href="/" className="hover:underline text-gray-300">Home</a></li>
+                    <li><a href="offers" className="hover:underline text-gray-300">Offers</a></li>
+                    <li><a href="footer" className="hover:underline text-gray-300">Contact</a></li>
+                    <li><a href="footer" className="hover:underline text-gray-300">About</a></li>
                 </ul>
             </div>
         </div>
