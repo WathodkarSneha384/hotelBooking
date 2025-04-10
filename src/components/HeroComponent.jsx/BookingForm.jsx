@@ -18,7 +18,6 @@ function BookingForm() {
       return;
     }
 
-    // You can add API call or logic here
     alert(`Checking availability for:\n
       Check-in: ${checkIn}\n
       Check-out: ${checkOut}\n
@@ -30,6 +29,7 @@ function BookingForm() {
 
   return (
     <div>
+
     <div className="booking-form">
       <div className="form-item">
         <label>CHECK-IN</label>
@@ -62,6 +62,7 @@ function BookingForm() {
 
     {showHotels && (
   <div className="hotel-slider">
+    <h2 style={{fontSize:'40px', textAlign:'center', marginTop:'30px',marginBottom:'30px'}}>Avaiable Hotels</h2>
     <Slider
       dots={true}
       infinite={true}
@@ -79,6 +80,7 @@ function BookingForm() {
         }
       ]}
     >
+      
       {hotels.map((hotel) => (
         <HotelCard key={hotel.id} hotel={hotel} />
       ))}

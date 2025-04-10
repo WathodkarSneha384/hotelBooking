@@ -3,6 +3,7 @@ import "../Style/header.css";
 
 function Home() {
   return (
+    <>
     <div className="hero">
       <nav className="navbar">
         <div className="logo">
@@ -39,6 +40,7 @@ function Home() {
         </ul>
       </nav>
     </div>
+    </>
   );
 }
 
