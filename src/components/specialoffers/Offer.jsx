@@ -1,4 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 const Offer = ({ offer }) => {
+  const navigate = useNavigate();
+  const handleAplyButton = () => {
+    navigate(-1);
+  };
+
   return (
     <div
       className="card px-3 py-2 my-2"
@@ -18,7 +25,7 @@ const Offer = ({ offer }) => {
         <button
           className="button  mt-2"
           style={{ background: "#2f4f4f", color: "white" }}
-          onClick={() => alert("Offer is Applied")}
+          onClick={handleAplyButton}
         >
           Apply
         </button>
