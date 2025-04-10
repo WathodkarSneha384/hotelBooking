@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import hotels from "../../database/hotel_card_data"
 import HotelCard from "./HotelCard";
+// import "../../Style/hotelListavail.css"
 
 const HotelList = () =>{
 
