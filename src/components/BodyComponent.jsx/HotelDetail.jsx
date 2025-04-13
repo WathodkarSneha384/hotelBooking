@@ -1,13 +1,15 @@
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import hotels from "../../database/hotel_card_data";
 import { Link } from "react-router-dom";
 import Review from "../review/Review";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 const HotelDetail = () => {
   const { cards_id } = useParams();
-  const hotelData = hotels.find((cards) => cards.id == cards_id);
+  const hotelData = hotels.find((cards) => cards.id === cards_id);
   const [hotel, setHotel] = useState(hotelData);
+  const location = useLocation();
+  const discount = location?.state?.discount || 0;
 
   const handleBookNow = () => {
     alert("Hotel Booking Confirmed");
@@ -24,6 +26,12 @@ const HotelDetail = () => {
     setHotel(updated);
   };
 
+  // const discountdPrice = useMemo(() => {
+  //   return hotel.price - (hotel.price * discount) / 100;
+  // }, [hotel, discount]);
+
+  const discountdPrice = hotel.price - (hotel.price * discount) / 100;
+
   return (
     <div>
       <div className="d-flex justify-content-evenly m-5 container border rounded">
@@ -35,8 +43,23 @@ const HotelDetail = () => {
           <h3>
             {hotel.city} {hotel.state}
           </h3>
-          <h5>&#8377;{hotel.price} </h5>
-          <Link to={"/offers"}>
+          <h5>
+            <span className="pr-2">&#8377;</span>
+
+            {discount ? (
+              <>
+                <span style={{ textDecoration: "line-through", color: "#F00" }}>
+                  {hotel.price}
+                </span>
+                <span className="pl-2">{discountdPrice}</span>
+                <div className="">{discount} % discount applied</div>
+              </>
+            ) : (
+              hotel.price
+            )}
+          </h5>
+
+          <Link to={"/offers"} state={{ hotelId: cards_id }}>
             <button
               className="button btn btn-sm px-2 my-2 "
               style={{
@@ -45,26 +68,25 @@ const HotelDetail = () => {
                 borderRadius: " 5px",
               }}
             >
-              Apply offers
+              See offers
             </button>
           </Link>
-          <h3>{hotel.rating}</h3>
+
+          <h3>Rating: {hotel.rating}</h3>
+
           <button
             onClick={handleBookNow}
-            className="btn btn-lg px-2 my-2 "
-            style={{
-              background: "green",
-              color: "white",
-              borderRadius: " 10px",
-            }}
+            className="btn btn-md btn-success px-2 my-2 "
           >
             Book Now
           </button>
         </div>
-        <div>
-          <button className="btn btn-outline-success mt-3 m-3"><a href="/">Back</a></button>
-        </div>
+
+        <Link to={"/"}>
+          <button className="btn btn-outline-success mt-3 m-3">Back</button>
+        </Link>
       </div>
+
       <div
         className="container border rounded mb-4 mt-4"
         style={{ textAlign: "center" }}

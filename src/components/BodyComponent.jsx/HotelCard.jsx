@@ -9,11 +9,11 @@ const HotelCard = ({ hotel }) => {
       />
       <div className="card-body">
         <h4 className="card-title">{hotel.name} </h4>
-        <h5 className="card-subtitle">
+        <h5 className="card-title">
           {hotel.city} in {hotel.state}
         </h5>
-        <h5 className="card-lsattitle">&#8377;{hotel.price}</h5>
-        <h5 className="card-lsattitle"> {hotel.rating}</h5>
+        <h5 className="card-title">Price: &#8377;{hotel.price}</h5>
+        <h5 className="card-title">Rating: {hotel.rating}</h5>
       </div>
       <div>
         <h2

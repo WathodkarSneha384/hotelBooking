@@ -1,0 +1,12 @@
+/* login_register.css */
+
+
+body {
+    background: url('../asset/Hero_banner_img.jpg'); /* Update the path as per your project structure */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}

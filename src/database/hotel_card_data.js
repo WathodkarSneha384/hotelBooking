@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 const hotels = [
   {
     id: "c1",
@@ -7,6 +5,7 @@ const hotels = [
     city: "Mumbai",
     state: "Maharastra",
     price: 5000,
+    discount:50,
     rating: "4.7",
     address: "Apollo Bandar, Colaba, Mumbai, Maharashtra 400001",
     phone: "022 6665 3366",

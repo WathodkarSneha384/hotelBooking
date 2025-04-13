@@ -1,9 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Offer = ({ offer }) => {
   const navigate = useNavigate();
-  const handleAplyButton = () => {
-    navigate(-1);
+  const location = useLocation();
+  const hotelId = location.state.hotelId;
+
+  const handleAplyButton = (value) => {
+    navigate("/detail/" + hotelId, { state: { discount: value } });
   };
 
   return (
@@ -20,12 +23,12 @@ const Offer = ({ offer }) => {
         <h4>{offer.offername}</h4>
       </div>
       <div className="card-body">
-        <h4 className="card-title">{offer.discount}</h4>
+        <h4 className="card-title">{offer.discount} % off</h4>
         <h6 className="card-subtitle">{offer.offerTime}</h6>
         <button
           className="button  mt-2"
           style={{ background: "#2f4f4f", color: "white" }}
-          onClick={handleAplyButton}
+          onClick={() => handleAplyButton(offer?.discount)}
         >
           Apply
         </button>
